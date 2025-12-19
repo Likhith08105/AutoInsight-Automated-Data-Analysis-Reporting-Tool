@@ -1,123 +1,82 @@
-# 🚀 AutoInsight – AI-Powered Data Analysis & Reporting
+# AutoInsight – Automated Data Analysis & AI-Powered Reporting Tool
 
-**AutoInsight** is an intelligent Flask-based data analysis web app that allows users to upload CSV datasets and instantly generate **structured analytical reports** including statistical summaries, missing value detection, and formatted HTML reports — all with one click.
+AutoInsight is a web-based application that allows users to upload CSV datasets and automatically generate meaningful data insights.  
+The system performs data analysis, anomaly detection, and provides AI-generated explanations in simple, human-readable language.
 
----
-
-## 🧩 Features
-
-- 📂 Upload any CSV file (auto-detects encoding)
-- 📊 Instant statistical summary (mean, std, count, etc.)
-- ⚠️ Missing value detection per column
-- 🎨 Clean, structured HTML report output
-- 💾 All reports automatically saved in `/reports`
-- 🧠 Extensible for AI-based insights & visualizations
+This project is designed to demonstrate practical skills in data analysis, machine learning, backend development, containerization, and deployment.
 
 ---
 
-## 🏗️ Project Structure
+## 🚀 Live Demo
+🔗 https://autoinsight.onrender.com
 
-```
+---
+
+## 📌 Features
+- Upload structured CSV datasets
+- Automatic data loading and preprocessing
+- Basic exploratory data analysis (EDA)
+- Anomaly detection using Isolation Forest
+- AI-generated insights in plain English
+- Clean and professional user interface
+- Fully Dockerized application
+- Deployed on Render cloud platform
+
+---
+
+## 🛠 Tech Stack
+- **Backend:** Python, Flask  
+- **Data Analysis:** Pandas, NumPy  
+- **Machine Learning:** Scikit-learn (Isolation Forest)  
+- **AI Insights:** LLM-based text generation  
+- **Frontend:** HTML, CSS  
+- **Containerization:** Docker  
+- **Deployment:** Render  
+- **Version Control:** Git, GitHub  
+
+---
+
+## 📂 Project Structure
+
 AutoInsight/
 │
 ├── app/
-│   ├── __init__.py
-│   ├── routes.py
-│   └── templates/
-│       └── index.html
+│ ├── main.py # Application routes and workflow
+│ └── services/ # Data processing & ML logic
 │
-├── reports/
-│   └── report_YYYYMMDD_HHMMSS.html
+├── templates/ # HTML templates
+├── static/ # CSS styles
+├── uploads/ # Uploaded CSV files
 │
-├── run.py
-├── requirements.txt
+├── Dockerfile # Docker configuration
+├── requirements.txt # Python dependencies
+├── run.py # Application entry point
+├── .env # Environment variables
 └── README.md
-```
+
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ How It Works
+1. User uploads a CSV file through the web interface  
+2. The backend loads and cleans the dataset  
+3. Exploratory analysis is performed  
+4. Anomaly detection identifies unusual records  
+5. AI generates insights in plain, easy-to-understand language  
+6. Results are displayed in a structured report format  
 
-### 1️⃣ Clone the Repository
+---
+
+## 🐳 Docker Support
+The entire application is containerized using Docker to ensure consistent behavior across environments.
+
+Render automatically builds and runs the Docker container during deployment.
+
+---
+
+## ▶️ Run Locally (Optional)
 ```bash
-git clone https://github.com/<your-username>/AutoInsight.git
+git clone https://github.com/your-username/AutoInsight-Automated-Data-Analysis-Reporting-Tool.git
 cd AutoInsight
-```
-
-### 2️⃣ Create Virtual Environment
-```bash
-python -m venv venv
-venv\Scripts\activate  # Windows
-# or
-source venv/bin/activate  # macOS/Linux
-```
-
-### 3️⃣ Install Dependencies
-```bash
 pip install -r requirements.txt
-```
-
-### 4️⃣ Run the App
-```bash
 python run.py
-```
-
-Now open your browser and visit:  
-👉 [http://127.0.0.1:5000](http://127.0.0.1:5000)
-
----
-
-## 📂 Output Example
-
-After uploading a CSV, the app generates a report like:
-```
-reports/report_20251006_153212.html
-```
-
-The report includes:
-- Dataset statistical overview  
-- Missing value summary  
-- Timestamp  
-- Clean structured HTML styling  
-
----
-
-## 🚀 Future Enhancements
-
-- Integration with **OpenAI API** for AI-driven insights  
-- Interactive charts with **Plotly/Seaborn**  
-- Advanced data cleaning recommendations  
-- Export as PDF or Excel  
-
----
-
-## 🧑‍💻 Tech Stack
-
-| Layer | Technology |
-|-------|-------------|
-| **Backend** | Flask (Python) |
-| **Frontend** | HTML, CSS |
-| **Data Analysis** | Pandas, NumPy |
-| **Visualization (Future)** | Matplotlib, Seaborn, Plotly |
-| **Deployment** | Render / Streamlit Cloud (optional) |
-
----
-
-## 🏷️ GitHub Tags
-```
-#Flask #Python #DataAnalysis #AI #MachineLearning #PortfolioProject #AutoInsight
-```
-
----
-
-## 🧑‍🎓 Author
-
-Likhith kumar Paidimarri<Likhith Kumar Paidimarri> 
-Final Year B.Tech | Data Science & AI Enthusiast  
-[LinkedIn](https://www.linkedin.com/in/likhith-kumar-paidimarri-312603258/) • [GitHub](https://github.com/Likhith08105)
-
----
-
-## 📜 License
-
-This project is open-source under the **MIT License**.
