@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="mb-4">Analysis Report</h2>
+
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="card metric-card">
+            <div class="metric-value">{{ eda_report.total_rows }}</div>
+            <div class="metric-label">Total Records</div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card metric-card">
+            <div class="metric-value">{{ eda_report.total_columns }}</div>
+            <div class="metric-label">Total Columns</div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card metric-card">
+            <div class="metric-value">{{ eda_report.numeric_columns }}</div>
+            <div class="metric-label">Numeric Features</div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card metric-card">
+            <div class="metric-value">{{ eda_report.categorical_columns }}</div>
+            <div class="metric-label">Categorical Features</div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-6">
+        <div class="card p-4">
+            <h5 class="section-title">Data Quality</h5>
+            <p>✔ Duplicates removed</p>
+            <p>✔ Missing values handled</p>
+            <p class="metric-label">
+                Duplicates Removed: {{ cleaning_report.duplicates_removed }}
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card p-4">
+            <h5 class="section-title">Anomaly Detection</h5>
+            <div class="metric-value text-danger">
+                {{ anomaly_report.anomalies_detected }}
+            </div>
+            <p class="metric-label">
+                anomalies detected out of {{ anomaly_report.total_records }} records
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="card p-4">
+    <h5 class="section-title">AI-Generated Insights</h5>
+    <div class="ai-box">
+        {{ ai_insights }}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-9">
+        <div class="card p-5">
+            <div class="text-center mb-4">
+                <h1 class="mb-2">AutoInsight</h1>
+                <p class="text-muted">
+                    Automated Data Analysis & AI-Powered Reporting
+                </p>
+            </div>
+
+            <div class="row mb-4 text-center">
+                <div class="col-md-4">
+                    <div class="icon">📂</div>
+                    <strong>Upload Dataset</strong>
+                    <p class="metric-label">Structured CSV files</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon">📊</div>
+                    <strong>Analyze Automatically</strong>
+                    <p class="metric-label">EDA & anomaly detection</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon">🤖</div>
+                    <strong>AI Insights</strong>
+                    <p class="metric-label">Plain-English explanations</p>
+                </div>
+            </div>
+
+            <form method="POST" action="/upload" enctype="multipart/form-data">
+                <div class="mb-4">
+                    <input
+                        type="file"
+                        name="file"
+                        class="form-control form-control-lg"
+                        accept=".csv"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">
+                    Upload & Generate Insights
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
