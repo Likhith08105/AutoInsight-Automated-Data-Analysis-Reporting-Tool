@@ -11,6 +11,16 @@ This project is designed to demonstrate practical skills in data analysis, machi
 🔗 https://autoinsight.onrender.com
 
 ---
+## 🖼️ Application UI Preview
+
+### 🔹 Input Form (Before Prediction)
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/be93acd5-fd22-4ee8-9fac-4fcda8d6b766" />
+### 🔹 Prediction Result with Summary & Visualization
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/e27bd049-6a9e-49fd-8728-d589c445e746" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/f3a8467d-cc5a-4195-9d48-c94dcbf52919" />
+
+
+
 
 ## 📌 Features
 - Upload structured CSV datasets
@@ -37,7 +47,7 @@ This project is designed to demonstrate practical skills in data analysis, machi
 ---
 
 ## 📂 Project Structure
-
+```text
 AutoInsight/
 │
 ├── app/
@@ -53,8 +63,7 @@ AutoInsight/
 ├── run.py # Application entry point
 ├── .env # Environment variables
 └── README.md
-
-
+```
 ---
 
 ## ⚙️ How It Works
@@ -80,3 +89,19 @@ git clone https://github.com/your-username/AutoInsight-Automated-Data-Analysis-R
 cd AutoInsight
 pip install -r requirements.txt
 python run.py
+
+```
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 👤 About Me
+
+- **Name:** Likhith Kumar  
+- **Degree:** B.Tech (Final Year)
+
+## 🎯 Interests
+
+- Machine Learning  
+- Backend Development  
+- Data-Driven Systems
