@@ -15,7 +15,12 @@ This project is designed to demonstrate practical skills in data analysis, machi
 
 ### 🔹 Input Form (Before Prediction)
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/be93acd5-fd22-4ee8-9fac-4fcda8d6b766" />
-### 🔹 Prediction Result with Summary & Visualization
+
+
+
+### 🔹 Analysis Report & AI-Generated Insights
+
+
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/e27bd049-6a9e-49fd-8728-d589c445e746" />
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/f3a8467d-cc5a-4195-9d48-c94dcbf52919" />
 
